@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mohan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+<!--navbar-->
+<header class="1-header"> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mohan's</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>           
+</header>
+<!--Home-->
+<main>
+  <section class="home section" id="home">
+    <div  style="display: flex;">
+      <div class="col-sm-9 p-3" style="
+        top: 25%;
+        left: 15%;
+        width: auto;
+        height: auto;
+        " id="home">
+        <h1 class="fw-bold">Hi,</h1>
+        <h1 class="fw-bold">i'am <span class="home__title-color" style="color: #0041C2">Mohan</span></h1>
+        <h1 class="fw-bold">web designer</h1>
+        <div >
+          <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal" style="width: 100px;">Contact</button>
+        </div>
+        <!--photo-->
+        <div style="
+        top: 25%;
+        left: 60%;
+        width: 200px;
+        height: 200px;
+        padding-right:50px">
+          <img src="mohan.jpg" style="width: 250px; border-radius: 50%;">   
+        </div>
+      </div>
+    </div>
+     
+     
+    <!--modal-->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">Contact US</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50">
+              <path fill="none" stroke="#306CFE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M43.75 31.25v8.187a4.166 4.166 0 0 1-4.77 4.167A37.5 37.5 0 0 1 6.541 11.021a4.167 4.167 0 0 1 4.146-4.771h8.062a2.083 2.083 0 0 1 2.083 1.854c.207 2.73.913 5.4 2.084 7.875a2.083 2.083 0 0 1-.875 2.625l-1.792 1.02a2.085 2.085 0 0 0-.687 3.043a29.3 29.3 0 0 0 7.687 7.687a2.083 2.083 0 0 0 3.042-.687l1.02-1.792a2.083 2.083 0 0 1 2.709-.792a22.4 22.4 0 0 0 7.875 2.084a2.083 2.083 0 0 1 1.854 2.083"/>
+          </svg>  My Contact number :<br> 7989909756</h5>
+            <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 193">
+              <path fill="#4285F4" d="M58.182 192.05V93.14L27.507 65.077L0 49.504v125.091c0 9.658 7.825 17.455 17.455 17.455h40.727Z"/>
+              <path fill="#34A853" d="M197.818 192.05h40.727c9.659 0 17.455-7.826 17.455-17.455V49.505l-31.156 17.837l-27.026 25.798v98.91Z"/>
+              <path fill="#EA4335" d="m58.182 93.14l-4.174-38.647l4.174-36.989L128 69.868l69.818-52.364l4.669 34.992l-4.669 40.644L128 145.504z"/>
+              <path fill="#FBBC04" d="M197.818 17.504V93.14L256 49.504V26.231c0-21.585-24.64-33.89-41.89-20.945l-16.292 12.218Z"/>
+              <path fill="#C5221F" d="m0 49.504l26.759 20.07L58.182 93.14V17.504L41.89 5.286C24.61-7.66 0 4.646 0 26.23v23.273Z"/>
+          </svg>  My Email Address :<br> ashapumohan123@gmail.com</h5>
+            <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 258">
+              <defs>
+                  <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+                      <stop offset="0%" stop-color="#1FAF38"/>
+                      <stop offset="100%" stop-color="#60D669"/>
+                  </linearGradient>
+                  <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+                      <stop offset="0%" stop-color="#F9F9F9"/>
+                      <stop offset="100%" stop-color="#FFF"/>
+                  </linearGradient>
+              </defs>
+              <path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a122.994 122.994 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/>
+              <path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416Zm40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513l10.706-39.082Z"/>
+              <path fill="#FFF" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561c0 15.67 11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716c-3.186-1.593-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/>
+          </svg>  My Whatsapp number :<br> 7989909756</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="icons" style="
+      top: 70%;
+      left: 15%;
+      width: 200px;
+      height: 200px;">
+        <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="padding-right: 15px;"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100084252888068&mibextid=ZbWKwL"><i class="fa-brands fa-facebook" style="padding-right: 15px;"></i></a>
+        <a href="https://www.instagram.com/mr_mohan__7781?igsh=ZTNtNnBzOGZqZ2Fx"><i class="fa-brands fa-instagram" style="padding-right: 15px;"></i></a>
+        <a href="https://github.com/AshapuMohan"><i class="fa-brands fa-github" style="padding-right: 15px;"></i></a>
+        <a href="https://x.com/MohanAshapu?t=xJfTG6_A_eo7VlKfCsg0MA&s=09"><i class="fa-brands fa-x-twitter" style="padding-right: 15px;"></i></a>
+        <a href="https://t.me/MohanAshapu" ><i class="fa-brands fa-telegram" style="padding-right: 15px;"></i></a>
+        <a href="https://youtube.com/@mohanashapu?si=3odbgLWQjgqen4N8"><i class="fa-brands fa-youtube" style="padding-right: 15px;"></i></a>
+    </div>
+  </section>
+  <!--About-->
+  <section class="about-section" id="about" style="width: 65vh;">
+    <div class="section-title"><h2 class="section-title" style="text-decoration: underline; text-decoration-color: cadetblue;">About</h2></div>
+    <div class="section-body" style="text-align: center;width:65vh;">
+      <img src="mohan.jpg" style="width: 200px; border-radius: 15px;">
+      <br>
+      <h3 class="about__title">A.Mohan</h3>
+      <p style="padding-left: 50px; padding-right: 50px">
+        I am currently pursuing a Bachelor of Technology in Information Technology, where I have established a solid foundation in web development, enriched by practical experience from internships and various projects. 
+        I possess strong skills in HTML, CSS, JavaScript, and frameworks such as React.
+        With my exceptional communication and problem-solving skills, I am enthusiastic about the opportunity to contribute to your team while advancing my career in front-end development.
+      </p>
+          
+    </div>
+  </section>
+  <!--Skills-->
+  <section class="skills-section" id="skill" style="display:flex;text-align:center; width:65vh">
+    <div class="section-title"><h2 class="section-title" style="text-decoration: underline; text-decoration-color: cadetblue;">Skills</h2></div>
+    <div class="skill-body" style="display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 10px;;">
+      <li>
+        C                         -90%
+      </li>
+      <li>
+        Python                    -85%       
+      </li>
+      <li>
+        OOP using C++/Java        -80%
+      </li>
+      <li>
+        HTML                      -95%
+      </li>
+      <li>
+        CSS                       -85%
+      </li>
+      <li>
+        Java Script               -75%
+      </li>
+    </div>
+
+  </section>
+  <!--Work-->
+  <section class="work-section" id="work" style="text-align: center;width:60vh;">
+    <div class="section-title"><h2 class="section-title" style="text-decoration: underline; text-decoration-color: cadetblue;">Work</h2></div>
+    <div class="section-body">
+      <h5 style="padding: 50px;">
+        <br>
+        1-Developer-SFVIP Cohort-5 2023
+        <br>
+        (Salesforce)
+        <br>
+        <br>
+        2-CCNAv7:Introduction to Networks
+        <br>
+        (Cisco Networking Academy)
+        <br>
+        <br>
+        3-International Level Student Workshop-2K24 On Data Science using Python
+        <br>
+        (Brain O Vision)
+      </h5>
+    </div>
+
+  </section>
+  <!--Contact-->
+  <section class="contact-section" id="Contact" style="text-align: center;width:65vh;">
+    <div class="section-title"><h2 class="section-title" style="text-decoration: underline; text-decoration-color: cadetblue;">Contact</h2></div>
+    <div class="section-body">
+      <p>Thank you for contacting me.i would like to get to know more about you in the interest of our possible partnership</p>
+      <h5>First Name:</h5>
+      <input type="text" placeholder="First Name" style="border-radius: 5px; border: 2px solid black ;width:150px">
+      <h5>Last Name:</h5>
+      <input type="text" placeholder="Last Name"  style="border-radius: 5px; border: 2px solid black ;width:150px">
+      <h5>Email</h5>
+      <input type="email" placeholder="name@gmail.com"  style="border-radius: 5px; border: 2px solid black;width:150px ">
+      <h5>Enter a question:</h5>
+      <textarea type="text" style="width: 300px; height: 300px;">enter your response.</textarea>
+    </div>
+  </section>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+        const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t=>{
+          new bootstrap.Tooltip(t)
+      })
+  </script>
+</body>
+</html>

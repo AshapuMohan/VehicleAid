@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Algorithm Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .chat-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .chat-message {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Student Report Algorithm Chat</h1>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Enter Student Information</h2>
+        <form id="student-form">
+            <input type="text" id="student-name" placeholder="Enter Student Name" required>
+            <input type="number" id="student-marks" placeholder="Enter Marks" required>
+            <select id="subject" required>
+                <option value="" disabled selected>Select Subject</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <!-- Add more subjects as needed -->
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+        <!-- Messages will be appended here -->
+    </div>
+</div>
+
+<script>
+    const studentForm = document.getElementById("student-form");
+    const chatBox = document.getElementById("chat-box");
+
+    studentForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const studentName = document.getElementById("student-name").value;
+        const studentMarks = document.getElementById("student-marks").value;
+        const subject = document.getElementById("subject").value;
+
+        // Validate input
+        if (studentName && studentMarks && subject) {
+            // Simulate a response from the algorithm
+            let message = `Student: ${studentName}\nMarks: ${studentMarks}\nSubject: ${subject}\n`;
+
+            // Here you can add your student report algorithm logic
+            message += `Report: This student has scored ${studentMarks} in ${subject}.`;
+
+            // Display the message in the chat box
+            const chatMessage = document.createElement("div");
+            chatMessage.classList.add("chat-message");
+            chatMessage.textContent = message;
+            chatBox.appendChild(chatMessage);
+
+            // Clear form after submission
+            studentForm.reset();
+        } else {
+            alert("Please fill in all fields.");
+        }
+    });
+</script>
+
+</body>
+</html>

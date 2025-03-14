@@ -1,0 +1,136 @@
+*{
+    scrollbar-width:none;
+}
+body{
+    margin:0;
+    padding:0;
+}
+section #about{
+    height: 85vh;
+}
+/*  -   -   -  Nav -   -   -  */
+.navbar-container{
+    height: 20px;
+    width: max-content;
+}
+.navbar{
+  width: 100%;
+  background: #666;
+  opacity: 0.85;
+  height: 50px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    color:aliceblue;
+    cursor: pointer;
+}
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    flex: 3
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex: 2
+}
+.menu-items li:hover{
+    color: cadetblue;
+}
+.menu-items a{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color: inherit;
+}
+.showcase-theme{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+.showcase-area{
+    background: url(home_page.jpg) no-repeat center center fixed #000;
+    /* height: 65vh; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*  -  -   -  -  -   about   -  -   -  -  -   */
+#about{
+    padding: 20px ;
+    background: #f5f5f7;
+    display: flex;
+}
+#about .small,#services .small {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 600;
+}
+#services{
+    background: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.card li{
+    list-style: none;
+}
+.img-fluid{
+    height: 30px;
+}
+.card{
+    width: 100%;
+    min-width: 700px;
+    height: 100%;
+    max-height: 700px;
+    margin: 0 auto;
+    background: #e9e9ed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+.card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 800;
+    text-align: center;
+}
+.card ol{
+    padding-left: 20px;
+}
+.card ol li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #555;
+    padding-left: 50px;
+}
+.card ol li img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+footer .container{
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#666;
+}

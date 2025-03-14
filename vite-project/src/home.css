@@ -1,0 +1,48 @@
+nav{
+    /* background-color: #F5F5F7; */
+    height: auto;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+a:hover{
+    cursor: pointer;
+}
+[role="search"]{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+[role="search"] input{
+    width: 400px;
+}
+.googlemap{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 450px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.results{
+    padding: 15px;
+}
+.container {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.customer-name {
+font-weight: bold;
+}
+.customer-price {
+font-size: 16px;
+font-weight: bold;
+color: green;
+}
+.d-flex {
+display: flex;
+justify-content: space-between;
+}
