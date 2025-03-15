@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import image1 from "./User Login.jpeg";
+import image2 from "./Mechanic-login.jpeg";
 import "./styles.css"
 
 function Login(){
@@ -23,7 +25,7 @@ function Login(){
                 <div className='col'>
                     <div className="card" style={{height:"350px",minWidth:"300px",alignItems:"center",gap:"20px"}}>
                         <img
-                            src="Mechanic-login.jpeg"
+                            src={image2}
                             alt="Avatar"
                             style={{ height: "300px", width: "200px", objectFit: "contain"}}
                         />
@@ -37,7 +39,7 @@ function Login(){
                 <div className='col'>
                     <div className="card" style={{height:"350px",minWidth:"300px",alignItems:"center",gap:"20px"}}>
                         <img
-                            src="User Login.jpeg"
+                            src={image1}
                             alt="Avatar"
                             style={{ height: "350px", width: "200px", objectFit: "contain" }}
                         />
