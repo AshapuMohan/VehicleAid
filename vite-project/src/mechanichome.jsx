@@ -20,7 +20,7 @@ const MechanicHome = () => {
   useEffect(() => {
     const fetchRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/getRequests");
+        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/getRequests`);
         setRequests(response.data.filter(req => req.status === "Pending"));
         setAcceptedRequests(response.data.filter(req => req.status === "Accepted"));
       } catch (error) {
@@ -36,10 +36,10 @@ const MechanicHome = () => {
   // Accept request function
   const handleAccept = async (requestId) => {
     try {
-      await axios.post("http://localhost:3001/acceptRequest", { requestId });
+      await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/acceptRequest`, { requestId });
 
       // Refresh requests after accepting
-      const response = await axios.get("http://localhost:3001/getRequests");
+      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/getRequests`);
       setRequests(response.data.filter(req => req.status === "Pending"));
       setAcceptedRequests(response.data.filter(req => req.status === "Accepted"));
 

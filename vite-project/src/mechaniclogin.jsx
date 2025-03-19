@@ -34,7 +34,7 @@ function MechanicLogin() {
 
         if (Object.keys(formErrors).length === 0) {
             try {
-                const result = await axios.post("http://localhost:3001/mechaniclogin", { email, password });
+                const result = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/mechaniclogin`, { email, password });
 
                 if (result.data.message === "success") {
                     // Store mechanic data in local storage

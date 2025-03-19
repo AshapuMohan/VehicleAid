@@ -48,18 +48,18 @@ const UserHome = () => {
     );
   }, []);
   useEffect(() => {
-    axios.get("http://localhost:3001/getMechanics")
+    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/getMechanics`)
         .then(response => setMechanics(response.data))
         .catch(error => console.error("Error fetching mechanics:", error));
 
-    axios.get("http://localhost:3001/getAcceptedRequests")
+    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/getAcceptedRequests`)
         .then(response => setAcceptedRequests(response.data))
         .catch(error => console.error("Error fetching accepted requests:", error));
 }, []);
 const handleSearch = async () => {
     if (!userLocation) return;
     try {
-      const response = await axios.get(`http://localhost:3001/mechanics?lat=${userLocation.lat}&lng=${userLocation.lng}`);
+      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/mechanics?lat=${userLocation.lat}&lng=${userLocation.lng}`);
       setMechanics(response.data);
     } catch (error) {
       console.error("Error fetching mechanics:", error);
@@ -99,7 +99,7 @@ useEffect(() => {
 
 // sending requset to mechanic
 const handleSubmitRequest = () => {
-  axios.post("http://localhost:3001/sendRequest", {
+  axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/sendRequest`, {
       userName: userDetails.userName,
       userPhone: userDetails.userPhone,
       problem: userDetails.problem,
@@ -118,7 +118,7 @@ const handleSubmitRequest = () => {
 useEffect(() => {
   const fetchRequests = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/getRequests");
+      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/getRequests`);
       setRequests(response.data);
     } catch (error) {
       console.error("Error fetching requests:", error);

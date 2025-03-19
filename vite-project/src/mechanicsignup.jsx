@@ -38,7 +38,7 @@ function MechanicSignup() {
         e.preventDefault();
         const formErrors = validateForm();
         if (Object.keys(formErrors).length === 0) {
-            axios.post("http://localhost:3001/mechanicsignup", { username, email, password })
+            axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/mechanicsignup`, { username, email, password })
                 .then((result) => {
                     console.log(result);
                     navigate("/mechaniclogin");

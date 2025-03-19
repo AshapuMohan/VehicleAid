@@ -23,7 +23,7 @@ function UserSignup() {
         e.preventDefault();
         const formErrors = validate();
         if (Object.keys(formErrors).length === 0) {
-            axios.post('http://localhost:3001/usersignup', { username, email, password })
+            axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/usersignup`, { username, email, password })
                 .then(result => {
                     console.log(result);
                     navigate('/userlogin');
