@@ -82,7 +82,7 @@ function Home() {
                     </div>
                     <div className='col'>
                         <div className="about-img">
-                            <img src="about.jpeg" style={{ height: "500px",borderRadius:"10px" }}/>
+                            <img src="/about.jpeg" style={{ height: "500px",borderRadius:"10px" }}/>
                         </div>
                     </div>
                 </div>
@@ -98,11 +98,11 @@ function Home() {
                                 <h4 className="card-header">Roadside Assistance</h4>
                                 <ol>
                                     <li>
-                                    <img src="Towing.jpg" className="img-fluid rounded" />
+                                    <img src="/Towing.jpg" className="img-fluid rounded" />
                                     Towing
                                     </li>
                                     <li>
-                                    <img src="Flat-Tyre.jpg" className="img-fluid rounded" />
+                                    <img src="/Flat-Tyre.jpg" className="img-fluid rounded" />
                                     Flat-Tyre
                                     </li>
                                     <li>
@@ -114,25 +114,25 @@ function Home() {
                                     </li>
                                     <li>
                                     <img
-                                        src="Startingproblem.jpg"
+                                        src="/Startingproblem.jpg"
                                         className="img-fluid rounded"
                                     />
                                     Starting Problem
                                     </li>
                                     <li>
-                                    <img src="Key-Unlock.jpg" />
+                                    <img src="/Key-Unlock.jpg" />
                                     Key-Unlock-Assistance
                                     </li>
                                     <li>
-                                    <img src="Fuel-Delivery.jpg" className="img-fluid rounded" />
+                                    <img src="/Fuel-Delivery.jpg" className="img-fluid rounded" />
                                     Fuel-Delivery
                                     </li>
                                     <li>
-                                    <img src="Minor-Mechanical-Repairs.jpg" />
+                                    <img src="/Minor-Mechanical-Repairs.jpg" />
                                     Minor Mechanic Repairs
                                     </li>
                                     <li>
-                                    <img src="Car Inspection.jpg" />
+                                    <img src="/Car Inspection.jpg" />
                                     Car Inspection
                                     </li>
                                 </ol>
