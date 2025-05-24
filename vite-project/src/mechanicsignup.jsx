@@ -3,7 +3,6 @@ import image1 from "./Mechanic-login.jpeg";
 import "./signup.css";
 import axios from "axios";
 import { Link,useNavigate } from "react-router-dom";
-
 function MechanicSignup() {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
