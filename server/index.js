@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     .then(() => console.log("MongoDB Atlas connected successfully"))
     .catch(err => console.error("MongoDB connection error:", err));
 
-// mongoose.connect("mongodb://127.0.0.1:27017/VehicleAid", { useNewUrlParser: true, useUnifiedTopology: true })
+// mongoose.connect("mongodb+srv://ashapumohan123:Mohan%401981@mohan.i5gtq.mongodb.net/vehicleaid?retryWrites=true&w=majority/vehicleaid", { useNewUrlParser: true, useUnifiedTopology: true })
 //     .then(() => console.log("MongoDB connected"))
 //     .catch(err => console.error(err));
 
